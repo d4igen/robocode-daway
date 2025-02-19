@@ -1,4 +1,4 @@
-package medyrobo;//pacote do meu robo
+package daway;//pacote do meu robo
 
 
 import robocode.*;//importação do robocode
@@ -21,11 +21,11 @@ import java.awt.*;//importação padrão gráfica do java
  * A variável boolean permite uma organização melhor da definição de parâmetros, permitindo assim, uma complexidade maior na hora de definir valores.
  * 
  * 
- * medybot - a class by (matheus henrique e davi)
+ * daway - a class by (matheus henrique e davi)
  * extends AdvancedRobot > assim como a classe normal "robot", porém com alguns comandos a mais, + especificos
 */
 
-public class medybot extends AdvancedRobot {
+public class dawaybot extends AdvancedRobot {
 	boolean movingForward;
 	boolean inWall; // // coloca como "true" assim que o robo esta perto da parede, possibilitando determinar comandos como onHitWall.
 // O comando "inwall = true" vai definir se ele está distante 50px, senão (else) "inwall = false"
@@ -103,7 +103,7 @@ public class medybot extends AdvancedRobot {
 		double bearingFromRadar = normalRelativeAngleDegrees(absoluteBearing - getRadarHeading());
 		
 		//faz uma espiral em volta do inimigo, se colocassemos 90 graus, ia ser paralelo sempre
-		// 50 e 100 nos valores, faz o medybot se mover de pouco em pouco para frente
+		// 50 e 100 nos valores, faz o dawaybot se mover de pouco em pouco para frente
 		if (movingForward){
 			setTurnRight(normalRelativeAngleDegrees(e.getBearing() + 50));
 		} else {
